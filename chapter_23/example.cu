@@ -12,12 +12,11 @@
 #define MPI 3.1415926535897932384626433832795
 #endif
 /**
- * @brief void diff(double* u, int* N, double* dx, double* du)
- *        Compute the central difference operator on periodic data
+ * @brief Compute the central difference operator on periodic data
  * @param double* u: Function data, assumed periodic
  * @param int* N: Pointer to the length of the data array
  * @param double* dx: Pointer to the space step size
- * @return doulbe* dx: Pointer to the central difference of the u data
+ * @return doulbe* du: Pointer to the central difference of the u data
  */
 __global__ void diff(double* u, int* N, double* dx, double* du) {
     // blockIdx is a CUDA provided constant that tells the block index within the grid

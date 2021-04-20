@@ -18,7 +18,7 @@ const int threadsPerBlock = 256; // 8 full warps per block
 __global__ void diff(double* u, int* N, double* dx, double* du);
 
 /**
- * @brief Demonstrate a simple example for implementing a parallel finite difference operator
+ * @brief Demonstrate a simple example for implementing a parallel finite difference operator using GPU shared memory
  * 
  * @param argc Should be 2.
  * @param argv[1] Length of the vector of data.

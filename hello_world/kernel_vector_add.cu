@@ -25,7 +25,7 @@ __global__ void vecAdd(float* A, float* B, float* C) {
 }
 
 int main() {
-    int N = 1000000000;
+    int N = 10000000;
 
     float* A = (float*)malloc(N * sizeof(float));
     float* B = (float*)malloc(N * sizeof(float));
